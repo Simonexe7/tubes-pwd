@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div:first-child {
+    padding: 3px;
+    background-color: #0070b2;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+header div:first-child p {
+    padding: 7px 20px;
+    text-align: right;
+    font-size: 13px;
+}
+
+header div:first-child img {
+    height: 10px;
+}
+
+header div:first-child p span {
+    color: rgb(187, 255, 0);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header div:first-child p:first-child {
+    width: 10%;
+    border-right: 1px solid white;
+}
+
+header div:first-child p:nth-child(2) {
+    width: 70%;
+    border-right: 1px solid white;
+}
+
+header div:first-child p:nth-child(3) {
+    width: 20%;
+    text-align: left;
+}
+
+header > div:nth-child(2) {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+header div:nth-child(2) .logo {
+    height: 50px;
+}
+
+header div:nth-child(2) div:nth-child(2) {
+    height: 35px;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+header div:nth-child(2) div input {
+    background-color: rgb(247, 244, 244);
+    border: none;
+    border-radius: 50px;
+    width: 520px;
+    padding: 10px 30px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+header div:nth-child(2) div button {
+    margin-right: 3px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0070b2;
+    color: white;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header div:nth-child(2) input::placeholder {
+    color: #0070b2;
+}
+
+header div:nth-child(2) div {
+    display: flex;
+    gap: 10px;
+}
+
+header div:nth-child(2) div img:first-child {
+    background-color: #0070b2;
+    padding: 5px;
+    width: 20px;
+    border-radius: 8px;
+}
+
+header div:nth-child(2) div img {
+    border: 3px solid #0070b2;
+    padding: 5px;
+    width: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+nav ul div {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 60px;
+}
+
+nav ul li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li img {
+    width: 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0070b2;
+}
+
+/* section div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+    font-size: 15px;
+}
+
+section div:first-child h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section div:first-child a {
+    color: #0070b2;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section div:nth-child(2) {
+    background-color: salmon;
+    padding: 0 70px;
+}
+
+section div:nth-child(2) div {
+    display: inline-block;
+    width: 20px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+section div:nth-child(2) button {
+    width: 100px;
+    height: 30px;
+    background-color: #0070b2;
+    padding: 5px;
+    border-radius: 29px;
+    border: none;
+} */
+
+  
+  /* Section */
+  .section {
+    /* margin-bottom: 40px; */
+    padding: 20px 0;
+    border-radius: 12px;
+    /* color: #fff; */
+    overflow: hidden;
+  }
+  
+  .section h2 {
+    font-size: 1em;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+  }
+  
+  .section h2 a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  
+  /* Background warna khusus per section */
+  .kilat {
+    background-color: #FD464E;
+  }
+  
+  .minggu {
+    background-color: #0E79D5;
+  }
+  
+  .valentine {
+    background-color: #fc61a1;
+  }
+  
+  .promo-khusus {
+    background-color: #f7b733;
+  }
+  
+  .produk-segar {
+    background-color: #6cc24a;
+  }
+  
+  /* Carousel */
+  .carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 8px 70px;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #ffffff;
+    color: #000;
+    min-width: 160px;
+    /* flex: 0 0 auto; */
+    padding: 15px 0;
+    border-radius: 10px;
+    /* text-align: center; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card img {
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .product-card .card-body {
+    padding: 10px;
+    
+  }
+  
+  .product-name {
+    font-size: 1em;
+    margin: 15px 0;
+    /* min-height: 40px; */
+    width: 130px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+  }
+  
+  .price {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Tombol Tambah */
+  .add-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .love-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .add-btn:hover {
+    background-color: #005bb5;
+  }
+  
+  .add-btn span {
+    font-size: 1em;
+  }
+
+  .footer {
+    background-color: #003333;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #eaf2f2;
+    color: #000;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    min-width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 6px;
+  }
+  
+  .social-section p {
+    font-weight: bold;
+  }
+  
+  .social-icons img,
+  .app-download img {
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .app-download {
+    margin-top: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: #003333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }

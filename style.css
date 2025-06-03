@@ -1,0 +1,79 @@
+body{
+    font: 16px/28px arial, sans-serif;
+    background: #eaeaea;
+    color: #333;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+    border:1px solid #fff;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+}
+.header ul li{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: salmon;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.header ul li a:hover{
+    background-color: lightskyblue;
+    color:#fff;
+    background-size: cover;
+}
+
+.header ul li.login {
+    float: right;
+}
+
+.hero{
+    height: 300px;
+    background-image: url(img/hero.jpg);
+    background-size: 960px 300px;
+    background-repeat: no-repeat;
+    border-top: 3px solid salmon;
+    border-bottom: 3px solid lightskyblue;
+    background-position: -5px 0;
+}
+
+.content .main{
+    width: 580px;
+    float: left;
+    text-align: justify;
+    padding-right:15px; 
+    border-right:solid 1px salmon;
+}
+.content .main .penulis{
+    font-size: 12px;
+    margin-top: -20px
+}
+
+.content .sidebar{
+    width: 300px;
+    float: right;
+    padding: 5px;
+}
+.content .sidebar img{
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin-top:20px;
+    margin-right: 15px;
+    border:1px solid #666;
+}
+
+.content .clear{
+    clear: left;
+}
